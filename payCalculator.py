@@ -2,24 +2,10 @@ def calculatePay():
     # Implement your solution in between the two comment blocks
     print("calculating pay")
     # This first line is provided for you
-    hasHrs = False
-    hasRate = False
-
-    while hasHrs != True:
-        try:
-            hrs = input("Enter Hours: ")
-            hrs = float(hrs)
-            hasHrs = True
-        except:
-            print ("That is not a valid number. Try again.")
-
-    while hasRate != True:
-        try:
-            rate = input("Enter Rate: ")
-            rate = float(rate)
-            hasRate = True
-        except:
-            print("That is not a valid number. Try again.")
+    hrs = input("Enter Hours: ")
+    hrs = float(hrs)
+    rate = input("Enter Rate: ")
+    rate = float(rate)
 
     grossPay = hrs * rate
     print(grossPay)
