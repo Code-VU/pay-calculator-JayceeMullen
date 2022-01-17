@@ -3,9 +3,9 @@ def calculatePay():
     print("calculating pay")
     # This first line is provided for you
     hrs = input("Enter Hours:")
-    hrs = float(hrs)
+    hrs = int(hrs)
     rate = input("Enter Rate:")
-    rate = float(rate)
+    rate = int(rate)
 
     grossPay = hrs * rate
     print(grossPay)
